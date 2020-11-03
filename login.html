@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+    <head>
+        <title>let's travel</title>
+        <link rel="stylesheet" href="style1.css">
+        <script type="text/javascript">
+            function validate()
+            {
+                var x=document.forms["myform"]["username"].value;
+                var y=document.forms["myform"]["pass"].value;
+                if(x=="" || y=="")
+                {
+                    alert("fill the details before submitting")
+                    return false;
+                }
+                if(y.length<8)
+                {
+                    alert("password too small");
+                    return false;
+                }
+                if(y.length>16)
+                {
+                    alert("password too big");
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="sec.html">Home</a></li>
+                <li><a href="pack.html">Package</a></li>
+                <li><a href="book.html">Booking</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="topnav-right"><a href="login.html">LogIn</a></li>
+                <li class="topnav-right"><a href="#signup">Call us:+91-9340913502</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776</a></li>
+            </ul>
+        </nav>
+        <div class="container" id="section-1-gradient">
+            <div class="row">
+                <div class="col-6">
+                    <div class="leftside-col">
+                        <h1 class="large">Join the</h1>
+                        <h1 class="large">travelling Community</h1>
+                    </div>
+                    <form name="myform" onsubmit="return validate()" action="sec.html">
+                        <div class="leftside-col">
+                           
+                            <h2>User Name</h2>
+                            <input class="inputbox" name="username" type="text" placeholder="Username">
+                            <h2>Password</h2>
+                            <input class="inputbox" name="pass" type="password" placeholder="password">
+                            <button type="submit" value=
+                            "Submit">Submit</button>
+                    
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <div class="rightside-col">
+                        <div class="video-container">
+                            <!--iframe width="560" height="315" src="/images/travel.jpg" allowfullscreen></iframe-->
+                            <img src="travel.jpg" height="500px" width="500px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>    

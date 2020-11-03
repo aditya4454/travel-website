@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <nav>
+           <ul class="topnav" id="dropdownClick">
+              <li><a href="sec.html">Home</a></li>
+              <li><a href="pack.html">Package</a></li>
+               <li><a href="book.html">Booking</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li class="topnav-right"><a href="login.html">LogIn</a></li>
+              <li class="topnav-right"><a href="#signup">Call us:+91-9340913502</a></li>
+              <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776</a></li>
+            </ul>
+        </nav>
+    <div class="container">
+            <div id="form-main">
+                <div id="form-div">
+                    <form class="montform" id="reused_form" name="fform" onsubmit="return validate()" action="sec.html">
+                        <p class="name">
+                            <input name="namee" type="text" class="feedback-input" required placeholder="Name" id="name" />
+                        </p>
+                        <p class="email">
+                            <input name="emaill" type="email" required class="feedback-input" id="email" placeholder="Email" />
+                        </p>
+                        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="india">India</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+            <option value="aus">Australia</option>
+            <option value="japan">Japan</option>
+            <option value="france">France</option>
+        </select>
+                        <p class="text">
+                            <textarea name="message" class="feedback-input" id="comment" placeholder="Message"></textarea>
+                        </p>
+                        <div class="submit">
+                            <button  class="button-blue" type="submit">SUBMIT</button>
+                            <div class="ease"></div>
+                        </div>
+                    </form>
+                 </div>
+            </div>
+         </div>
+            <script>
+            function validate() {
+            var x=document.forms["fform"]["namee"].value;
+            var y=document.forms["fform"]["emaill"].value;
+            if(x=="" || y=="")
+            {
+                return false;
+            }
+            else
+            {
+               alert("Message was submitted successfully"); 
+                return true;
+            }
+}         
+</script>        
+    </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Booking Form</title>
+<style>
+
+.booking_section {
+    clear: both
+}
+
+.img_window {
+    position: absolute
+}
+
+#img {
+    width: 30%;
+    height: 225px;
+    background-color: transparent;
+    margin-bottom: 100px;
+    float: left
+}
+
+#img:before {
+    content: "";
+    position: absolute;
+    background: url(skull.png);
+    z-index: 20;
+    background-size: 225px;
+    height: 225px;
+    width: 225px;
+    pointer-events: none
+}
+
+#booking_form {
+    width: 40%;
+    float: left;
+    padding-top: 50px
+}
+
+#booking_form h1 {
+    font-size: 50px;
+    letter-spacing: 1px;
+    background: #16556A;
+    background: -webkit-linear-gradient(left, #16556A, #52C481);
+    background: -o-linear-gradient(right, #16556A, #52C481);
+    background: -moz-linear-gradient(right, #16556A, #52C481);
+    background: linear-gradient(to right, #16556A, #52C481);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px
+}
+
+input {
+    width: 49%;
+    padding: 10px 10px;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+    border: 1px solid #b2b2b2;
+    resize: none;
+    font-family: "Alegreya Sans", Arial, sans-serif;
+    letter-spacing: .5px;
+    float: left
+}
+
+input[name="firstname"] {
+    margin-top: 18px;
+    margin-bottom: 0;
+    margin-right: 2%
+}
+
+input[name="email"],
+input[name="number"],
+input[name="start_date"] {
+    margin-right: 2%
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+    border: 1px solid #b2b2b2;
+    resize: none;
+    font-family: "Alegreya Sans", Arial, sans-serif;
+    letter-spacing: .5px
+}
+
+input[type=submit] {
+    background: #f7554d;
+    background: -webkit-linear-gradient(left, #f3be28, #f7554d);
+    background: -o-linear-gradient(right, #f3be28, #f7554d);
+    background: -moz-linear-gradient(right, #f3be28, #f7554d);
+    background: linear-gradient(to right, #f3be28, #f7554d);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    cursor: pointer
+}
+
+#submit:disabled {
+    background: #dedede;
+    color: #a3a3a3;
+    cursor: not-allowed;
+    border: 0
+}
+
+#status {
+    text-align: center
+}
+
+.error {
+    text-align: center;
+    color: red;
+    font-weight: 700
+}
+
+</style>
+
+</head>
+<body>
+
+
+
+
+
+
+  <!--Booking section-->
+  <div class="booking_container" id="booking_container">
+    <div class="wrapper">
+      <div id="img"></div>
+      <form id="booking_form" action="sec.html" method="POST">
+        <h1>Booking</h1>
+        <input type="text" name="firstname" placeholder="First Name" id="first_name">
+        <br>
+        <input type="text" name="lastname" placeholder="Last Name" id="last_name">
+        <br>
+        <input type="email" name="email" placeholder="Email Address" id="email">
+        <br>
+        <input type="tel" name="phone" placeholder="Phone Number" id="phone">
+        <br>
+        <input type="number" name="number" placeholder="Number of people" min="10" max="60" id="number">
+        <br>
+        <input type="text" name="Location" placeholder="Location" id="location">
+        <br>
+        <input type="date" name="start_date" id="start_date">
+        <br>
+        <input type="date" name="end_date" id="end_date">
+        <br>
+        <textarea rows="8" cols="50" placeholder="Message" id="message"></textarea>
+        <br>
+        <input type="submit" value="Submit" id="submit">
+        <p id="status"></p>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

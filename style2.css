@@ -1,0 +1,46 @@
+h4,
+h6 {
+margin: 0;
+padding: 0;
+font-family: 'Raleway', sans-serif;
+letter-spacing: 1px;
+}
+.banner-position-main {
+    width: 430px;
+    height: 204px;
+}
+.main-banner {
+    padding-top: 12em;
+}
+.banner-right-txt h4 {
+    font-size: 2.3em;
+}
+.banner-right-txt h4 {
+    font-size: 2.1em;
+}
+.banner-right-txt {
+    padding: 1.5em 1.2em;
+}	
+.banner-right-txt {
+    bottom: -55px;
+    left: 22%;
+	}
+	.banner-right-txt h5 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.banner-right-txt {
+    left: 15%;
+}
+.banner-right-txt {
+    padding: 1.1em 1em;
+}
+.banner-right-txt h4 {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+@media(max-width:736px){
+.banner-position-main {
+    width: 425px;
+    height: 187px;
+}
